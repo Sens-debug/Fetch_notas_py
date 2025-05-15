@@ -35,3 +35,8 @@
     2.  pyarmor gen app.py   
     3.  pyinstaller --onefile --hidden-import asyncio --hidden-import os --hidden-import sys --hidden-import pymssql --hidden-import flet --hidden-import ThreadPoolExecutor --noconsole dist/app.py
             Debido a la ofuscacion hay que usar el "--hidden-impor" para importar todas las dependencias del Proyecto
+
+*EJECUCION .EXE*
+    El archivo app.exe se encuentra en la ruta /dist/app.exe -> El app.py que se encuentra en esta misma ruta es el archivo ofuscado por pyarmor
+
+    Debido que la compilacion fue --onefile no se necesita nada mas que el unico .exe
